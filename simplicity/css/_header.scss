@@ -47,6 +47,13 @@
     font-family: 'Lobster', cursive;
     font-size: 4.5rem;
     flex-grow: 5;
+    cursor: pointer;
+    transition: $linkTransition ease-in-out;
+
+    &:hover {
+        color: transparent;
+        text-shadow: 0 0 5px $washedRed;
+    }
 }
 
 .cta {

@@ -111,6 +111,14 @@ body {
   -webkit-box-flex: 5;
       -ms-flex-positive: 5;
           flex-grow: 5;
+  cursor: pointer;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.logo:hover {
+  color: transparent;
+  text-shadow: 0 0 5px #cf4545;
 }
 
 .cta {
