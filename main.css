@@ -30,5 +30,11 @@ body {
           transform: rotate(-13deg);
   color: #fcedd8;
   text-shadow: 5px 5px 0px #eb452b, 10px 10px 0px #efa032, 15px 15px 0px #46b59b, 20px 20px 0px #017e7f, 25px 25px 0px #052939, 30px 30px 0px #3d6f92, 35px 35px 0px #3d6f92, 40px 40px 0px #3d6f92, 45px 45px 0px #3d6f92;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.content div:hover {
+  font-size: 8rem;
 }
 /*# sourceMappingURL=main.css.map */
