@@ -1,9 +1,14 @@
-$shellPink: #c785b6;
+/* colours */
+$shellPink: #eeaede;
 $golden: goldenrod;
 $sonicBlue: #5499ca;
 $muddBrown: rgb(165, 164, 83);
 $mossGreen: #64ad6a;
 $navyBlue: rgb(55, 107, 143);
 $teal: #017e7f;
+$washedRed: rgb(207, 69, 69);
 
-$mainColor: $mossGreen;
+$mainColor: $muddBrown;
+
+/* transitions */
+$linkTransition: 200ms

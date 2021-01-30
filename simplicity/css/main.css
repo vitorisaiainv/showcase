@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+/* colours */
+/* transitions */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -25,7 +27,7 @@ a:hover {
 
 body {
   margin: 0;
-  background-color: #64ad6a;
+  background-color: #a5a453;
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
 }
@@ -56,6 +58,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: dotted 1px black;
 }
 
 .menuItems {
@@ -73,17 +76,33 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   font-size: 0.87rem;
-  -webkit-transition: 300ms ease-in-out;
-  transition: 300ms ease-in-out;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
   position: relative;
 }
 
+.menuItems div:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4px;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  bottom: -30px;
+  background: #cf4545;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
 .menuItems div:hover {
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  /*text-shadow: 0 0 5px rgba(0,0,0,0.5);*/
+  color: #cf4545;
 }
 
 .menuItems div:hover::before {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .logo {
@@ -111,11 +130,15 @@ body {
   background: black;
   padding: 0.6rem 1.25rem;
   border-radius: 50px;
-  color: #64ad6a;
+  color: #a5a453;
   font-weight: 600;
   font-size: 1.2em;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.ctaButton:hover {
+  color: #cf4545;
 }
 
 .mainSection {
@@ -126,13 +149,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 1000px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-style: italic;
   font-weight: bold;
 }
@@ -141,10 +164,81 @@ body {
   font-weight: bold;
 }
 
+.mainSection span {
+  font-size: 0.6em;
+}
+
 .mainSection img {
   width: 100px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+}
+
+.mainSection__core {
+  /*background-color: aliceblue;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+}
+
+.mainSection__core__discs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.mainSection__core__discs div {
+  border: solid 3em black;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.mainSection__core__discs div:hover {
+  opacity: 0.7;
+}
+
+.mainSection__core__discs div:nth-child(1) {
+  background-color: #a0de87;
+}
+
+.mainSection__core__discs div:nth-child(2) {
+  background-color: #e6a0ec;
+}
+
+.mainSection__core__discs div:nth-child(3) {
+  background-color: #858ab8;
+}
+
+.mainSection__core__discs div:nth-child(4) {
+  background-color: #ec455b;
+}
+
+.mainSection__core__discs div:nth-child(5) {
+  background-color: burlywood;
+}
+
+.mainSection__decoration_end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .footer {
@@ -160,8 +254,18 @@ body {
           flex-direction: column;
   height: 200px;
   background-color: black;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   border-radius: 10px 10px 0px 0px;
+}
+
+.footer li {
+  cursor: pointer;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.footer li:hover {
+  color: #cf4545;
 }
 
 .footer__content {
@@ -177,7 +281,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-transform: capitalize;
-  color: #64ad6a;
+  color: #a5a453;
 }
 
 .footer__slice {
