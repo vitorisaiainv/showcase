@@ -1,0 +1,25 @@
+.footer {
+    grid-area: FOOTER;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background-color: black;     
+    font-size: 0.7rem;
+    border-radius: 10px 10px 0px 0px;
+
+    &__content {
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: capitalize;
+        color: $mainColor;
+    } 
+
+    &__slice {  
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(207, 69, 69);
+        height: 4px;
+    }
+}

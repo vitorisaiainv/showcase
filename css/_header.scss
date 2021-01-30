@@ -1,0 +1,64 @@
+.nav {
+    grid-area: NAV;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    align-items: center;
+}
+
+.menuItems {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+
+    & div {
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 0.87rem;
+        transition: 300ms ease-in-out;
+        position: relative;
+    }
+
+    // & div:before {
+    //     content: "";
+    //     display: block;
+    //     position: absolute;
+    //     height: 4px;
+    //     left: 0;
+    //     right: 0;      
+    //     bottom: -30px;
+    //     background: black;
+    //     opacity: 0;
+    //     transition: opacity 800ms ease-in-out;
+    // }
+
+    & div:hover {
+        text-shadow: 0 0 5px rgba(0,0,0,0.5);
+        &::before {        
+            opacity: 1;
+          }
+    }
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 4.5rem;
+    flex-grow: 5;
+}
+
+.cta {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ctaButton {
+    font-family: 'Lobster', cursive;
+    background: black;
+    padding: 0.6rem 1.25rem;
+    border-radius: 50px;
+    color: $mainColor;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: all 300ms ease-in-out;
+}

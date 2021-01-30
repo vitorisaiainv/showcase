@@ -4,10 +4,10 @@ body {
     margin: 0;  
     height: 100vh;
     font-family: 'Lobster', cursive;
-    font-size: 4.5rem;
+    font-size: 5rem;
 }
 
-.content {
+.content {   
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -16,6 +16,8 @@ body {
     background-color: rgb(84, 153, 202);
 
     & div {
+        cursor: pointer;
+        transform: rotate(-13deg);   
         color: #fcedd8;
         text-shadow: 5px 5px 0px #eb452b, 
         10px 10px 0px #efa032, 
