@@ -43,16 +43,35 @@
     }
 }
 
-.logo {
-    font-family: 'Lobster', cursive;
-    font-size: 4.5rem;
-    flex-grow: 5;
-    cursor: pointer;
-    transition: $linkTransition ease-in-out;
+.hamburger {
+    display: none;
+    > span {
+        width: 24px;
+        height: 2px;
+        background-color: black;
+        display: block;
+        cursor: pointer;
+        
+        &:not(:last-child) {
+            margin-bottom: 3px;
+        }
+            
+    }
+}
 
-    &:hover {
-        color: transparent;
-        text-shadow: 0 0 5px $washedRed;
+.logo {
+    flex-grow: 5;
+    
+    & span {
+        font-family: 'Lobster', cursive;
+        font-size: 4.5rem;
+        cursor: pointer;
+        transition: $linkTransition ease-in-out;
+    
+        &:hover {
+            color: transparent;
+            text-shadow: 0 0 5px black;
+        }
     }
 }
 
