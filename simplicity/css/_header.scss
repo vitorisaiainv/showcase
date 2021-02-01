@@ -49,14 +49,14 @@
 
 .hamburger {
     > span {
-        width: 24px;
-        height: 2px;
+        width: 47px;
+        height: 4px;
         background-color: black;
         display: block;
         cursor: pointer;
 
         &:not(:last-child) {
-            margin-bottom: 3px;
+            margin-bottom: 7px;
         }
     }
 }
