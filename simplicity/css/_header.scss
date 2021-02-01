@@ -69,8 +69,6 @@
     transition: $linkTransition ease-in-out;
 
     &:hover {
-        transform: rotate(-10deg);
-        //color: transparent;
         text-shadow: 0 0 5px $washedRed;
     }
 }
