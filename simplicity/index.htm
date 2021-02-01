@@ -6,23 +6,35 @@
     </head>
     <body>
         <div id="container" class="container">
-            <nav id="nav" class="nav">
-                <div class="logo"><span onclick="document.location.href='../index.htm'">Simplicity.</span></div>
-                <div class="hamburger hide_fo">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menuItems">
-                    <div>Awesome!</div>
-                    <div>Just do it.</div>
-                    <div>Cool?</div>
-                    <div>Yeah, right.</div>
-                </div>
-                <div class="cta">
-                    <a href="#" class="ctaButton">Hey ho, let's go!</a>
-                </div>
-            </nav>
+            <header>
+                <nav id="nav" class="nav">
+                    <span class="logo" onclick="document.location.href='../index.htm'">Simplicity.</span>
+                    <a href="#" id="hamburger" class="hamburger hide-for-desktop">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <div class="hide-for-mobile">
+                        <ul class="menuItems">
+                            <li>
+                                Awesome!
+                            </li>
+                            <li>
+                                Just do it.
+                            </li>
+                            <li>
+                                Cool?
+                            </li>
+                            <li>
+                                Yeah, right.
+                            </li>                  
+                            <li>
+                                <a href="#" class="cta">Hey ho, let's go!</a>
+                            </li>                                                                  
+                        </ul>
+                    </div>
+                </nav>
+            </header>
             <section class="mainSection">
                 <div class="mainSection__core">
                     <div class="mainSection__core__discs">
@@ -31,17 +43,9 @@
                         <div></div>
                         <div></div>
                         <div></div>
+                        <div></div>
                     </div>
                 </div>
-                <div class="mainSection__core">
-                    <div class="mainSection__core__discs">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>                
                 <div class="mainSection__decoration_end">
                     <!-- <span>"...I won't look back, I won't worry... 'cause my best days are before me."</span> -->
                     <img src="images/tree.svg">
